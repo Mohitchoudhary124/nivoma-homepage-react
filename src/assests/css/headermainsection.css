@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'JUST Sans';
+    src: url('../fonts/JUST\ Sans\ ExBold.otf');
+    src: url('../fonts/JUST\ Sans\ Regular.otf');
+}
+.main-header{
+   background-color: #FFFFFF ;
+   box-sizing: border-box;
+   max-width: 100%;
+}
+.main-header-inner{
+   margin: 30px 50px;
+   display: flex;
+   flex-direction: row;
+} 
+.main-logo img{
+    width: 150px;
+    height: 50px;
+} 
+.header-list{
+    display: flex;
+    flex-direction: row;
+} 
+.header-list-inner{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 20px;
+    align-items: center;
+}
+.header-list{
+    position: relative;
+}
+.header-list-inner{
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    position: relative;
+}
+.header-list-inner li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header-list-inner li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px; /* Height of the underline */
+    background-color: #55595c;
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.header-list-inner{
+    font-family: "Poppins" ,sans-serif;
+    font-size: 18px;
+    font-weight: 300;  
+}
+.contact-btn button{
+    box-sizing: border-box;
+     height: 50px;
+     width: 150px;
+     background-color: #193D38;
+     color: white;
+     border-radius: 25px;     
+     border: none;
+}
+.contact-btn button{
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+.header-selection{
+    font-weight: 300;
+    font-family: "Poppins" ,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-family: "BuenosAiresThin";
+    padding: 15px 18px;
+    margin-left: 20px;
+}
+.main-section img{
+    width: 100%;   
+}
+.main-section{
+    position: relative;
+}
+.main-section-overlay{
+    height: 450px;
+    width: 800px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    background-color: #fff;
+
+}
+.main-section-overlay{
+    background: #0000007D 0% 0% no-repeat padding-box;
+    opacity: 0.96;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+.main-section-overlay-inner{
+    padding: 90px;
+}
+.overlay-inner-content h2{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  color: #FEFFFE;
+}
+.overlay-inner-content h3{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    color: #FEFFFE;
+    line-height: 60px;
+  }
+  .overlay-inner-content p{
+    padding-top: 20px;
+    font-family: 'JUST Sans',sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 24px;
+}
+.overlay-inner-content-button{
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+}
+.overlay-inner-content-button .contentb1{
+    background: #FFFF34 0% 0% no-repeat padding-box;
+    border-radius: 60px;
+    opacity: 1;
+    padding: 20px 30px;
+}
+.overlay-inner-content-button .contentb1{
+    text-align: left;
+    font-family:"JUST Sans" ,sans-serif;
+    letter-spacing: 0px;
+    color: #141824;
+    opacity: 1;
+}
+
+.overlay-inner-content-button .contentb2{
+    border: 1px solid #F5F5F5;
+    border-radius: 60px;
+    opacity: 1;
+    padding: 20px 30px;
+    margin-left: 40px;
+}
+.overlay-inner-content-button .contentb2{
+    text-align: left;
+    font-family:"JUST Sans" ,sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+/* copied  */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.menu-btn{
+    display: none;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    margin-right: 20px;
+    margin-left: 450px;
+}
+.menu-btn span{
+    font-weight: 600;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+.navlink{
+    border-bottom: solid #fff;
+    text-decoration: none;
+    color: #414f5d;
+}
+.navlink:hover{
+    transition: .3s ease-in-out;
+    border-bottom: solid #193D38;
+}
+.nav-right{
+    padding-right: 5.5rem;
+}
+
+
+/* RESPONSIVE NAVBAR AND HOMEPAGE */
+
+
+  
+@media screen and (max-width: 1028px) {
+.menu-btn{
+    display: block;
+    }
+    .nav-left{
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+    .main-logo img{
+        width: 145px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-right{
+        padding-right: 1.2rem;
+    }
+    .navlink li{
+        margin-bottom: 10px;
+    }
+    #menu{
+        /* border: solid; */
+        display: none;   
+    }
+    #active-menu{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        left: 0px;
+        text-align: center;
+        z-index: 5;
+        background-color: #fff;
+        transition: .2s ease;
+        transform-origin: top;
+    }
+    .main-section img{
+        height: 650px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .main-section-overlay{
+        height: 450px;
+        width: 85%;
+        left: 73px;
+        top: 80px;
+    }
+    .overlay-inner-content{
+        padding: 0%;
+    }
+    .main-section-overlay-inner{
+        padding: 60px;
+    }
+    .main-header-inner{
+        margin: 10px;
+    }
+    .header-list{
+        width: 100%;
+        justify-content: end;
+    }
+
+} 
+
+@media screen and (max-width: 830px) {
+    .menu-btn{
+        margin-left: 250px ;
+    }
+    .main-logo img{
+        width: 130px;
+    }
+    .main-header-inner{
+        padding: 0;
+        margin: 10px;
+    }
+    .main-section img{
+        height: 590px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .main-section-overlay{
+        height: 380px;
+        width: 85%;
+        top: 17%;
+        left: 7%;
+    }
+    .header-list{
+        width: 100%;
+        align-items: end;
+        justify-content: end;
+    }
+    .main-section-overlay-inner{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .main-logo img{
+        width: 110px;
+        height: 50px;
+    }
+    .menu-btn{
+        margin-left: 0 ;
+        margin-right: 0;
+    }
+    .header-list{
+        width: 100%;
+        justify-content: end;
+    }
+    .contact-btn button{
+        width: 110px;
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: #193D38;
+        border-radius: 60px 60px 60px 60px;
+    }
+    .header-selection{
+        margin: 0%;
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .main-section-overlay-inner{
+        padding: 20px;
+    }
+    .main-section-overlay{
+        height: 450px;
+        width: 95%;
+        padding: 0;
+        left: 2%;
+    }
+    .overlay-inner-content h2{
+        font-size: 30px;
+    }
+    .overlay-inner-content h3{
+        font-size: 30px;
+    }
+    .overlay-inner-content p{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .overlay-inner-content-button{
+        display: block;
+        align-items: center;
+        
+    }
+    .overlay-inner-content-button .contentb2{
+    margin-top: 20px;
+     margin-left: 0px;
+    }
+    
+}

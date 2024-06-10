@@ -1,0 +1,87 @@
+.yellowsection{
+     box-sizing: border-box;
+     height: 550px;
+     width: 100%;
+     background: #FFFF34;
+     text-align: center;
+     padding: 130px 80px;
+}
+.yellow-section-content h2{
+    font-size: 40px;
+    font-family: "Raleway", Sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+    color: #1a3e39;
+}
+.yellow-section-content h3{
+    margin: 50px 0px;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #1a3e39;
+}
+.yellow-section-button h4{ 
+   
+    margin-left: 380px;
+    margin-right: 380px;
+    padding-left: 300px;
+    font-family: "JUST Sans",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #193D38;
+    color: #FFFFFF;
+    border-radius: 35px;     
+    border: none;
+    /* margin: 30px 30px 30px 0px; */
+    padding: 18px 10px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* MEDIA QUERY FOR RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    .yellow-section-button{
+        display: flex;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .yellow-section-button h4 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 22px 40px;
+    }
+    .yellowsection {
+        padding-top: 110px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .yellow-section-content h2 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .yellowsection {
+        height: 550px;
+        padding: 100px 0 0 0;
+    }
+
+    .yellow-section-content h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .yellowsection {
+        height: 620px;
+        padding: 130px 20px 0 20px;
+    }
+
+    .yellow-section-content h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}

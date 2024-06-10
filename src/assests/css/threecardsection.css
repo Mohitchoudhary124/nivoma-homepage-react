@@ -1,0 +1,328 @@
+.cardsection{
+    background-color: #FFFFFF;
+    height: 450px;
+    max-width: 100%;
+    display: flex;
+    padding-left: 15px;
+
+}
+.card{
+    height: 320px;
+    width: 400px;
+    margin: 50px 20px;
+    /* background-color: red; */
+}
+.card1{
+  background-color: #193D38;
+  position: relative;
+  box-shadow: 0 1px 10px 0 grey;
+}
+.card1-overlay{
+  background-color: #193D38;
+  box-shadow: 0 1px 10px 0 grey;
+}
+.card1 h2{
+    color: #FFFFFF;
+    font-size: 60px;
+    padding-top: 80px;
+    text-align: center;
+}
+.card1 h3{
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.card1 .plus-icon{
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.card1:hover .plus-icon{
+     transform: rotate(45deg);
+     z-index: 1;
+}
+.card2:hover .plus-icon{
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.card3:hover .plus-icon{
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.card2{
+    background-color: #FFFF34;
+    position: relative;
+    box-shadow: 0 1px 10px 0 grey;
+
+}
+.card2 h2{
+    color: #193D38;
+    font-size: 60px;
+    padding-top: 80px;
+    text-align: center;
+}
+.card2 h3{
+    color: #193D38;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.card2 .plus-icon{
+    color: #193D38;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+.card3{
+  background-color: #193D38;
+  position: relative;
+  box-shadow: 0 1px 10px 0 grey;
+
+}
+.card3 h2{
+    color: #ffffff;
+    font-size: 60px;
+    padding-top: 80px;
+    text-align: center;
+}
+.card3 h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.card3 .plus-icon{
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+.card1-overlay-content{
+    color: #FFFFFF;
+    padding: 100px 80px;
+}
+.card1-overlay-content{
+     font-size: 17px;
+     line-height: 20px;
+}
+.card1-overlay{
+    /* position: absolute; */
+    margin: -12.6rem 0 0 -2.5rem;
+    transform: translateX(-100%);
+    transition: .3s ease;
+}
+.card1:hover .card1-overlay{
+    transform: translateX(10%);
+}
+.card1-inner{
+    overflow: hidden;
+}
+/* card2 overlay */
+.card2-overlay{
+    background-color: #FFFF34;
+    box-shadow: 20px 20px 50px grey;
+}
+.card2-overlay-content{
+    color: #193D38;
+    padding: 100px 80px;
+}
+.card2-overlay-content{
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 500;
+}
+.card2-overlay{
+    /* position: absolute; */
+    margin: -12.7rem 0 0 -2.5rem;
+    transform: translateX(-100%);
+    transition: .3s ease;
+    visibility: hidden;
+}
+.card2:hover .card2-overlay{
+    transform: translateX(10%);
+    visibility: visible;
+}
+.card2-inner{
+    overflow: hidden;
+}
+/* card 3 overlay started */
+.card3-overlay{
+    background-color: #193D38;
+    box-shadow: 20px 20px 50px grey;
+}
+.card3-overlay-content{
+    color: #FFFFFF;
+    padding: 100px 80px;
+}
+.card3-overlay-content{
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 500;
+}
+.card3-overlay{
+    /* position: absolute; */
+    margin: -12.7rem 0 0 -2.5rem;
+    transform: translateX(-100%);
+    transition: .3s ease;
+    visibility: hidden;
+}
+.card3:hover .card3-overlay{
+    transform: translateX(10%);
+    visibility: visible;
+}
+.card3-inner{
+    overflow: hidden;
+}
+
+/* RESPONSIVE DESIGN  */
+
+@media screen and (max-width: 1028px) {
+
+    .card {
+        height: 300px;
+        width: 315px;
+    }
+    .card1-overlay-content {
+        padding: 60px 75px;
+    }
+    .card2-overlay-content {
+        padding: 60px 75px;
+    }
+    .card3-overlay-content {
+        padding: 60px 75px;
+    }
+    .cardsection {
+        padding-left: 0;
+    }
+    .card1 h2 {
+        font-size: 40px;
+        font-family: "Poppins", Sans-serif;
+        padding-top: 80px;
+        text-align: center;
+    }
+    .card1 h3 {
+        font-size: 16px;
+        font-family: "JUST Sans",sans-serif;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .card2 h2 {
+        font-family: "Poppins", Sans-serif;
+        font-size: 40px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    .card2 h3 {
+        font-size: 16px;
+        font-family: "JUST Sans",sans-serif;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .card3 h2 {
+        font-family: "Poppins", Sans-serif;
+        font-size: 40px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    .card3 h3 {
+        font-size: 16px;
+        font-family: "JUST Sans",sans-serif;
+        padding-top: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .card {
+        height: 290px;
+        width: 270px;
+    }
+    .card1-overlay-content {
+        padding: 50px 52px;
+    }
+    .card2-overlay-content {
+        padding: 50px 52px;
+    }
+    .card3-overlay-content {
+        padding: 50px 52px;
+    }
+    .cardsection {
+        padding-left: 0;
+        margin: 0px;
+    }
+    .card1 h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .card2 h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .card3 h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .card {
+        height: 320px;
+        width: 375px;
+    }
+    .card1-overlay-content {
+        padding: 50px 52px;
+    }
+    .card2-overlay-content {
+        padding: 50px 52px;
+    }
+    .card3-overlay-content {
+        padding: 50px 52px;
+    }
+    .cardsection {
+        height: 1100px;
+        max-width: 100%;
+        display: block;
+        padding-left: 0;
+        margin: 0px;
+    }
+    .card1 h2 {
+        font-size: 44px;
+        padding-top: 80px;
+    }
+    .card1 h3 {
+        font-size: 18px;
+        padding-top: 40px;
+    }
+    .card2 h2 {
+        font-size: 44px;
+        padding-top: 80px;
+    }
+    .card2 h3 {
+        font-size: 18px;
+        padding-top: 40px;
+    }
+    .card3 h2 {
+        font-size: 44px;
+        padding-top: 80px;
+    }
+    .card3 h3 {
+        font-size: 18px;
+        padding-top: 40px;
+    }
+   
+}
+@media screen and (max-width: 390px) {
+    /* .card{
+        margin: 50px 2px;
+    } */
+    .card {
+        height: 305px;
+        width: 330px;
+    }
+}

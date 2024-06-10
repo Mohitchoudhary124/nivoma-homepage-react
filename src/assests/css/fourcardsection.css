@@ -1,0 +1,140 @@
+.card-section{
+    height: 750px;
+    max-width: 100%;
+}
+.cardimg{
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+.card-row1{
+    display: flex;
+    height: 325px;
+    max-width: 100%;
+}
+.card1-row1-col1{
+    width: 50%;
+    padding: 0px 100px 50px 100px;
+
+}
+.card2-row1-col2{
+    width: 50%;
+    padding: 0px 130px 50px 95px;
+
+}
+/* ROW TWO STARTED */
+.card-row2{
+    display: flex;
+    height: 325px;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.card3-row2-col3{
+    width: 50%;
+    padding: 50px 100px;
+
+}
+.card4-row2-col2{
+    width: 50%;
+    padding: 50px 100px;
+
+}
+
+.card-title{
+    color: #1a3e39;
+    font-family: "JUST Sans", Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+    justify-content: space-between;
+}
+.card-heading{
+    color: #414f5d;
+    font-family: "JUST Sans", Sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.card-para{
+    color: #414f5d;
+    font-family: "JUST Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1028px) {
+    .card2-row1-col2 {
+        width: 50%;
+        padding: 0px 25px 50px 35px;
+    }
+    .card1-row1-col1 {
+        width: 50%;
+        padding: 0px 15px 50px 35px;
+    }
+    .card3-row2-col3 {
+        width: 50%;
+        padding: 0px 25px 50px 35px;
+    }
+    .card4-row2-col2 {
+        width: 50%;
+        padding: 0px 15px 50px 35px;
+    }
+    .card-row2{
+        padding-top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 820px) {
+    .card-heading {
+        padding-bottom: 15px;
+    }
+    .card4-row2-col2 {
+        padding-right: 25px;
+    }
+    
+    .card-section {
+        height: 800px ;
+       padding-bottom: 40px; 
+    }
+}
+@media screen and (max-width: 430px) {
+    .card-section {
+        height: 1560px ;
+    }
+    .card-row1  {
+        padding-top: 50px;
+        height: auto;
+        display: block;
+    }
+    .card-row2 {
+        display: block;
+    }
+    .card1-row1-col1, .card2-row1-col2, .card3-row2-col3, .card4-row2-col2{
+        width: 95%;
+    }    
+    .card-row2 {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .card-section {
+        height: 1700px ;
+    }
+    .card1-row1-col1, .card2-row1-col2, .card3-row2-col3, .card4-row2-col2{
+        width: 95%;
+    }  
+    .card2-row1-col2 {
+        padding: 0px 15px 50px 35px;
+    }
+    
+}

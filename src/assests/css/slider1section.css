@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'JUST Sans';
+    src: url('../fonts/JUST\ Sans\ ExBold.otf');
+    src: url('../fonts/JUST\ Sans\ Regular.otf');
+}
+
+.slidersection1main{
+    max-width: 100% ;
+    height: 850px;
+    background: #193D38 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    display: flex;
+}
+/* .circle {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid yellow; 
+    background-color: transparent; 
+} */
+
+
+.circle1 {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid yellow; /* Yellow border */
+    background-color: transparent;
+    bottom: 75px; /* Adjust position as needed */
+    left: -45px; /* Adjust position as needed */
+}
+
+.circle2 {
+    width: 190px; /* Adjust size as needed */
+    height: 190px; /* Adjust size as needed */
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid yellow; /* Yellow border */
+    background-color: transparent;
+    bottom: 40px; /* Adjust position as needed */
+    left: -80px; /* Adjust position as needed */
+}
+.circle3 {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid yellow; /* Yellow border */
+    background-color: transparent;
+    bottom: 10px; /* Adjust position as needed */
+    left: -105px; /* Adjust position as needed */
+}
+.slidercontent{
+    height: 700px;
+    width: 600px;
+    padding-left: 70px;
+    padding-top: 200px;
+}
+.slidercontentinner h3{
+    color: #FFFFFF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 60px;
+}
+.slidercontentinner h2{
+    color: #FFFFFF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 60px;
+}
+.slidercontentinner p{
+    padding-top: 15px;
+    color: #FFFFFF;
+    font-family: "JUST Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+}
+.slidercontentbtn button{
+    background-color: #193D38;
+    border: 1px solid #F5F5F5;
+    border-radius: 60px;
+    opacity: 1;
+    padding: 25px 70px;
+    margin-top: 80px;
+}
+.slidercontentbtn button{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* owl slider  */
+.owl-slider{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 150px;
+    height: 600px;
+    width: 550px;
+}
+.owl-carousel .owl-item img{
+    height: 650px;
+    width: 550px;
+}
+.owl-dot{
+    background: #ccc;
+}
+.owl-dot active{
+    background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+.item img{
+    position: relative;
+}
+.overlay-content{
+    height: 600px;
+    width: 500px;
+    background-image: url('../images/image-slider1.jpg');
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    left: 20px;
+}
+/* .overlay-content button{
+    bottom: 30px;
+    left: 20px;
+} */
+.overlay-content{
+    display: flex;
+    align-items: flex-end;
+    bottom: 20px;
+    left: 10px;
+
+}
+.overlay-content1{
+    transform: translateY(260%);
+    transition: .3s ease;
+}
+.overlay-content:hover .overlay-content1{
+    transform: translateY(0%);
+}
+  
+.overlay-content-button{
+    padding: 10px 25px;
+    background-color:#193D38;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    box-shadow: #193D38;
+}
+.overlay-content-button1{
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border: 2px solid;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    box-shadow: currentColor;
+}
+
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+    .owl-slider {
+        width: 50%;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    .slidercontent {
+        padding-left: 30px;
+        width: 50%;
+    }
+    .slidersection1main{
+        height: 800px;
+    }
+    .slidercontentbtn button {
+        padding: 22px 70px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .owl-slider {
+        width: 42%;
+        padding-top: 100px;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+    }
+    .overlay-content{
+        margin: 0%;
+        width: 100%;
+    }
+    .slidercontent {
+        padding-left: 30px;
+        width: 55%;
+    }
+    
+    .overlay-content-button{
+        padding: 5px 12px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+      
+    }
+    .overlay-content-button1{
+        padding: 5px 10px;
+        box-shadow: currentColor;
+        margin-left: 30px;
+    }
+
+}
+@media screen and (max-width: 430px) {
+    .slidersection1main {
+        max-width: 100%;
+      
+        height: 1200px;
+        display: block;
+    }
+    .slidercontentinner h3{
+        font-size: 27px;
+    }
+    .slidercontentinner h2{
+        font-size: 24px;
+    }
+    .slidercontent{
+        height: 440px;
+        padding-top: 80px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .slidercontentbtn button{
+        padding: 15px 50px;
+        margin-top: 30px;
+    }
+    .owl-slider {
+        width: 95%;
+        background-repeat: no-repeat;
+        padding: 0%;
+        padding-top: 90px;
+        margin: 0%;
+        padding-left: 8px;
+    }
+    .overlay-content{
+        margin: 0%;
+        padding: 0%;
+    }
+   
+
+}
+@media screen and (max-width: 390px) {
+    .owl-slider {
+        width: 95%;
+        height: 200px;
+        padding-top: 90px;
+        padding-left: 8px;
+    }
+    .slidercontent{
+        height: 500px;
+        width: 100%;
+    }
+    .overlay-content{
+        margin-top: 50px ;
+        height: 500px;
+        margin: 0%;
+        padding: 0%;
+    }
+}
